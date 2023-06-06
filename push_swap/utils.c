@@ -3,20 +3,26 @@
 /*                                                        :::      ::::::::   */
 /*   utils.c                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mstocche <mstocche@student.42.fr>          +#+  +:+       +#+        */
+/*   By: mlongo <mlongo@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/30 18:35:14 by mlongo            #+#    #+#             */
-/*   Updated: 2023/06/06 12:57:17 by mstocche         ###   ########.fr       */
+/*   Updated: 2023/05/30 18:43:53 by mlongo           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "./bonus/checker.h"
+#include "push_swap.h"
 
 t_listlink	*move_on_first(t_listlink *stack)
 {
 	while (stack->index != 1)
 		stack = stack->next;
 	return (stack);
+}
+
+void	ft_error(void)
+{
+	ft_printf("Error");
+	exit(1);
 }
 
 void	ft_free1(char **split)
@@ -42,7 +48,7 @@ void	delete_list(t_listlink *stack_a)
 	free(stack_a);
 }
 
-void	ft_error1(char **helper, t_listlink *stack_a, int flag, int *error)
+void	ft_error1(char **helper, t_listlink *stack_a, int flag)
 {
 	if (flag == 1)
 	{
@@ -54,5 +60,6 @@ void	ft_error1(char **helper, t_listlink *stack_a, int flag, int *error)
 		delete_list(stack_a);
 		ft_free1(helper);
 	}
-	*error += 1;
+	ft_printf("Error");
+	exit(1);
 }

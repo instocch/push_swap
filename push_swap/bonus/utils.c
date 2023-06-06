@@ -6,11 +6,11 @@
 /*   By: mlongo <mlongo@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/30 18:35:14 by mlongo            #+#    #+#             */
-/*   Updated: 2023/05/30 18:43:53 by mlongo           ###   ########.fr       */
+/*   Updated: 2023/06/06 17:11:25 by mlongo           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "push_swap.h"
+#include "checker.h"
 
 t_listlink	*move_on_first(t_listlink *stack)
 {
@@ -48,7 +48,7 @@ void	delete_list(t_listlink *stack_a)
 	free(stack_a);
 }
 
-void	ft_error1(char **helper, t_listlink *stack_a, int flag)
+void	ft_error2(char **helper, t_listlink *stack_a, int flag)
 {
 	if (flag == 1)
 	{

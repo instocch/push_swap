@@ -3,15 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   get_next_line.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mstocche <mstocche@student.42.fr>          +#+  +:+       +#+        */
+/*   By: mlongo <mlongo@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/07 13:02:21 by mlongo            #+#    #+#             */
-/*   Updated: 2023/06/06 12:56:42 by mstocche         ###   ########.fr       */
+/*   Updated: 2023/06/06 14:46:02 by mlongo           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "get_next_line.h"
-#include "./bonus/checker.h"
+#include "../bonus/checker.h"
 
 char	*expand_res(char *current)
 {
